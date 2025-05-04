@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.*;
 import java.time.Duration;
 
 public class BasePage {
-    private WebDriver driver;
+    public WebDriver driver;
     private WebDriverWait Wait;
 
     public BasePage (WebDriver driver){
@@ -98,4 +98,13 @@ public class BasePage {
             return false;
         }
     }
+
+    public void verifyLoginError() {
+        
+    }
+
+    public void verifyLoginSuccess() {
+    }
+
+
 }

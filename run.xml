@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="E-Commerce Test Suite">
+    <test name="Sequential Test Flow" preserve-order="true">
+        <classes>
+            <!-- Registration Test -->
+            <class name="tests.RegistrationUserCreationTest">
+                <methods>
+                    <include name="registerNewUser"/>
+                </methods>
+            </class>
+
+            <!-- Login Test -->
+            <class name="tests.LoginTestSuite">
+                <methods>
+                    <include name="loginWithValidCredentials"/>
+                </methods>
+            </class>
+
+            <!-- E2E Add to Cart and Checkout -->
+<!--            <class name="tests.E2E">-->
+<!--                <methods>-->
+<!--                    <include name="Valid_End_TO_End_Add_To_Cart_Scenario"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+        </classes>
+    </test>
+</suite>
