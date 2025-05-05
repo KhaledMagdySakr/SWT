@@ -9,14 +9,26 @@
                 </methods>
             </class>
 
-            <!-- Login Test -->
-            <class name="tests.LoginTestSuite">
+<!--            &lt;!&ndash; Login Test &ndash;&gt;-->
+<!--            <class name="tests.LoginTestSuite">-->
+<!--                <methods>-->
+<!--                    <include name="loginWithValidCredentials"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+
+<!--             E2E Add to Cart and Checkout -->
+
+            <class name="tests.AddToCartTest">
                 <methods>
-                    <include name="loginWithValidCredentials"/>
+                    <include name="addProductToCartTest"/>
                 </methods>
             </class>
 
-            <!-- E2E Add to Cart and Checkout -->
+            <class name="tests.CheckoutProcessTests">
+                <methods>
+                    <include name="testCheckoutProcess"/>
+                </methods>
+            </class>
 <!--            <class name="tests.E2E">-->
 <!--                <methods>-->
 <!--                    <include name="Valid_End_TO_End_Add_To_Cart_Scenario"/>-->
