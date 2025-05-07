@@ -75,7 +75,9 @@
     </dependencies>
 
     <build>
+
         <plugins>
+
             <!-- Maven Surefire Plugin to run TestNG tests -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

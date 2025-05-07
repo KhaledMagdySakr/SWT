@@ -18,6 +18,7 @@ public class CheckoutProcessTests extends BaseTest {
     AddToCartPage addToCartPage;
     CheckoutPage checkoutPage;
     CategoryPage categoryPage;
+    LoginTestSuite loginTestSuite ;
 
     @BeforeClass
     public void setUpPages() {
@@ -26,6 +27,8 @@ public class CheckoutProcessTests extends BaseTest {
         addToCartPage = new AddToCartPage(driver);
         checkoutPage = new CheckoutPage(driver);
         categoryPage = new CategoryPage(driver);
+        loginTestSuite = new LoginTestSuite(driver);
+
     }
 
     @DataProvider(name = "Data")
@@ -37,13 +40,16 @@ public class CheckoutProcessTests extends BaseTest {
     public void testCheckoutProcess(String name, String email) throws InterruptedException {
 //        // Setup: Add a product to cart first
 //        // Navigate to product
-//        categoryPage.goToAccessories();
-//        categoryPage.goToShoes();
-//        categoryPage.selectRedSandal();
+//        // Navigate to product
+//        // Navigate to product
+        loginTestSuite.loginWithValidCredentials();
+        categoryPage.goToAccessories();
+        categoryPage.goToShoes();
+        categoryPage.selectRedSandal();
 //
 //        // Add product to cart
-//        productPage.selectProductSize();
-//        productPage.addProductToCart();
+        productPage.selectProductSize();
+        productPage.addProductToCart();
 //
 //        // Wait for cart page to load
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
