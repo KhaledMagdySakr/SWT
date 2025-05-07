@@ -12,14 +12,10 @@ public class LoginPage extends BasePage{
    private By Password =By.id("loginFrm_password");
    private By LoginButton =By.xpath("//button[@title=\"Login\"]");
 
-
    public void login(String username, String password) {
       WaitElements(LoginButton,2);
       type(LoginName, username);
       type(Password, password);
       click(LoginButton);
    }
-
-
-
 }
