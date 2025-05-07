@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class ProductPage extends BasePage {
+    // Locators for the elements on the Product page
+
     private By SelectSize = By.id("option344747");
     private By AddToCart = By.xpath("//a[@class=\"cart\"]");
     private By ProductPrice = By.className("price");
@@ -15,11 +17,14 @@ public class ProductPage extends BasePage {
     }
 
     // Fluent interface methods
+    // Method to select the product size
+
     public ProductPage selectProductSize() {
         WaitElements(SelectSize, 2);
         click(SelectSize);
         return this;
     }
+    // Method to set the quantity of the product
 
     public ProductPage setQuantity(String quantity) {
         WaitElements(QuantityInput, 2);
@@ -27,6 +32,7 @@ public class ProductPage extends BasePage {
         type(QuantityInput, quantity);
         return this;
     }
+    // Method to add the product to the cart
 
     public AddToCartPage addProductToCart() {
         WaitClick(AddToCart, 2);
@@ -34,11 +40,13 @@ public class ProductPage extends BasePage {
         return new AddToCartPage(driver);
     }
 
+// Method to get the product name
 
     public String getProductName() {
         WaitElements(ProductName, 2);
         return getText(ProductName);
     }
+// Method to get the product price
 
     public String getProductPrice() {
         WaitElements(ProductPrice, 2);

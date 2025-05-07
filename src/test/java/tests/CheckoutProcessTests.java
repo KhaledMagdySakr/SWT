@@ -1,4 +1,10 @@
 package tests;
+/**
+ * Automation Script: Checkout Process Test
+ * Description: This test validates that a user can complete the checkout process successfully.
+ * Expected Result: The user should be redirected to the confirmation page after checkout.
+ * Author: YourName
+ */
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -53,7 +59,7 @@ public class CheckoutProcessTests extends BaseTest {
         // 1. Click on checkout button
         addToCartPage.Checkout();
         
-        // 2. Wait for checkout page to load (assuming there's a confirmation button visible when page loads)
+        // 2. Wait for checkout page to load
         wait.until(ExpectedConditions.elementToBeClickable(By.id("checkout_btn")));
         
         // 3. Click on confirm button

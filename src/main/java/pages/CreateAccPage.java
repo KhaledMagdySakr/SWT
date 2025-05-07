@@ -3,6 +3,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class CreateAccPage extends BasePage {
+    // Locators for all the registration fields
+
     private By FirstName = By.id("AccountFrm_firstname");
     private By LastName = By.id("AccountFrm_lastname");
     private By Email = By.id("AccountFrm_email");
