@@ -34,6 +34,7 @@
 <!--                    <include name="Valid_End_TO_End_Add_To_Cart_Scenario"/>-->
 <!--                </methods>-->
 <!--            </class>-->
+
         </classes>
     </test>
 </suite>
