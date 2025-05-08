@@ -2,7 +2,6 @@ package pages;
 /**
  * BasePage class provides common  methods that can be used across all other page classes.
  * This class contains methods for interacting with web elements, handling waits, and dealing with alerts.
- * Author: omnia
  */
 
 import org.openqa.selenium.By;

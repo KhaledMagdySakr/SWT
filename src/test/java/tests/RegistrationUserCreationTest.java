@@ -3,7 +3,6 @@ package tests;
  * Automation Script: Register New User Test
  * Description: This test validates the successful registration of a new user and checks if the "My Account" page is displayed after registration.
  * Expected Result: After successful registration, the user should be redirected to the "My Account" page.
- * Author: YourName
  */
 
 import org.openqa.selenium.By;

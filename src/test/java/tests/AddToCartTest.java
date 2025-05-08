@@ -3,7 +3,6 @@ package tests;
  * Automation Script: Add to Cart Test
  * Description: This test checks that a user can add a red sandal to the cart successfully.
  * Expected Result: Product appears in cart page after addition.
- * Author: YourName
  */
 
 import org.openqa.selenium.support.ui.ExpectedConditions;

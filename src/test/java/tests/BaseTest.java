@@ -3,7 +3,6 @@ package tests;
  * BaseTest class serves as the base class for test setup and teardown in the test suite.
  * It initializes the WebDriver, sets up the necessary environment before the test suite runs,
  * and performs cleanup tasks after the tests are completed.
- * Author: YourName
  */
 
 import org.openqa.selenium.WebDriver;

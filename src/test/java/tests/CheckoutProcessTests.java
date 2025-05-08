@@ -3,7 +3,6 @@ package tests;
  * Automation Script: Checkout Process Test
  * Description: This test validates that a user can complete the checkout process successfully.
  * Expected Result: The user should be redirected to the confirmation page after checkout.
- * Author: YourName
  */
 
 import org.openqa.selenium.By;
@@ -41,16 +40,7 @@ public class CheckoutProcessTests extends BaseTest {
 
     @Test(dataProvider = "Data")
     public void testCheckoutProcess(String name, String email) throws InterruptedException {
-//        // Setup: Add a product to cart first
-//        // Navigate to product
-//        categoryPage.goToAccessories();
-//        categoryPage.goToShoes();
-//        categoryPage.selectRedSandal();
-//
-//        // Add product to cart
-//        productPage.selectProductSize();
-//        productPage.addProductToCart();
-//
+
 //        // Wait for cart page to load
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 //
