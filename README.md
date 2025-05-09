@@ -16,6 +16,10 @@ We will develop an automated testing suite using Selenium or a similar framework
 <br/><br/>**Generate final reports:** Create detailed reports summarizing the results of all tests, including performance metrics.
 <br/><br/>**Documentation:** Write detailed documentation on the automated testing framework, how to use it, and how to add new test cases.
 <br/><br/>**Deploy the framework:** Make the testing framework ready for continuous integration and deployment (CI/CD) pipelines .
+<br/><br/>**Jira Link:-**
+<br/><br/>**https://depi12345.atlassian.net/jira/software/projects/DP/boards/1/backlog?atlOrigin=eyJpIjoiM2E3YWJmNGExYmUzNDYyZmJlZDE2ZWZjODlmMDBiY2EiLCJwIjoiaiJ9**
+<br/><br/>**Test Cases:**
+<br/><br/>**https://docs.google.com/spreadsheets/d/1nq_F4FSnvgtSCLFumqIpSEtsyz9htdxBqIY54Kn4qTo/edit?gid=0#gid=0**
 <br/><br/>**Testers:**
 <br/>**Khaled Magdy Sakr**
 <br/>**Hoda Mahmoud**
